@@ -1,9 +1,9 @@
 Name: YOUR NAME HERE
 
-| Date    |  Time  |                                     Update |
-|:--------|:------:|-------------------------------------------:|
-| April 5 | 9-10pm | I tried to write abstract, efficient code. |
-|         |        |                                            |
+| Date         |     Time      |                                                                                                                                                                                                                                                                                                                                                 Update |
+|:-------------|:-------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| April 5      |    9-10pm     |                                                                                                                                                                                                                                                                                                             I tried to write abstract, efficient code. |
+| January 25th | 5:20 - 6:00pm | I tried to do this and I think I made some of the most horrendous frankenstein code I've ever seen in my life. I genuinely am embarrassed by this code and I hope nobody else sees it. It literally makes no sense and I don't think its even worth trying to explain here because I am immediately going to redo it all the next time I work on this. |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.

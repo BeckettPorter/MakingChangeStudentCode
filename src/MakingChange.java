@@ -15,82 +15,75 @@ public class MakingChange
      *  for any given total with any given set of coins.
      */
 
-    // Index corresponds to the coin, array at that index is the already tried number of those coins.
-    private static ArrayList<Integer>[] coinCombos;
 
     public static long countWays(int target, int[] coins)
     {
-        int numWaysFound = 0;
 
-        // Need to find the TOTAL number of ways to make up the target given an array of ints (coins).
-        int highestCoin = 0;
-        for (int c : coins)
-        {
-            highestCoin = Math.max(c, highestCoin);
-        }
-        coinCombos = new ArrayList[highestCoin + 1];
+        // Sort the coins from smallest to largest.
+        int[] sortedCoins = sortSmallToLarge(coins);
 
-        for (int i = 0; i < coinCombos.length; i++)
-        {
-            coinCombos[i] = new ArrayList<>();
-        }
+        int totalWays = 0;
 
-        for (int i = 0; i < coins.length; i++)
+
+        System.out.println(twoCoinComparison(sortedCoins[0], sortedCoins[1], target));
+
+        for (int smallCoinIndex = 0; smallCoinIndex < sortedCoins.length - 1; smallCoinIndex++)
         {
-            long numCanUseCoin = 0;
-            while (numCanUseCoin != -1)
+            for (int largeCoinIndex = smallCoinIndex; largeCoinIndex < sortedCoins.length; largeCoinIndex++)
             {
-                numCanUseCoin = useCoinUntilCant(coins[i], target);
-            }
-        }
-
-        for (int coin1 : coins)
-        {
-            for (int coin2 : coins)
-            {
-                if (coin1 != coin2)
-                {
-                    for (int mult1 : coinCombos[coin1])
-                    {
-                        for (int mult2 : coinCombos[coin2])
-                        {
-                            if (coin1 * mult1 + coin2 * mult2 == target)
-                            {
-                                numWaysFound++;
-                            }
-                        }
-                    }
-                }
+                totalWays += twoCoinComparison(sortedCoins[smallCoinIndex], sortedCoins[largeCoinIndex], target);
             }
         }
 
 
 
-
-
-
-
-        return numWaysFound;
+        return totalWays;
     }
 
-    private static long useCoinUntilCant(int coin, int target)
+    // for small coin, get max num we can fit, then subtract large coin from total, repeat
+
+    private static int twoCoinComparison(int smallCoin, int largeCoin, int target)
     {
-        int calculatedAmount = 0;
-        int numThisCoin = 0;
+        int numCombosFound = 0;
 
-        // All possible coin counts for this coin have already been calculated.
-        if (coinCombos[coin].contains(1))
+        // Given two coins, this should find the number of combos we can make with them.
+        while (target > smallCoin)
         {
-            return -1;
+            int currentTestAmount = smallCoin;
+
+            // Add as many small coins as we can.
+            while (currentTestAmount < target)
+            {
+                currentTestAmount += smallCoin;
+            }
+
+            if (target % currentTestAmount == 0)
+            {
+                numCombosFound++;
+            }
+
+            target -= largeCoin;
         }
 
-        while (calculatedAmount + coin <= target && !coinCombos[coin].contains(numThisCoin + 1))
-        {
-            calculatedAmount += coin;
-            numThisCoin++;
-        }
-        coinCombos[coin].add(numThisCoin);
+        return numCombosFound;
+    }
 
-        return numThisCoin;
+    private static int[] sortSmallToLarge(int[] ar)
+    {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        for (int num : ar)
+        {
+            arrayList.add(num);
+        }
+        arrayList.sort(null);
+
+        int[] sortedList = new int[ar.length];
+
+        for (int i = 0; i < arrayList.size(); i++)
+        {
+            sortedList[i] = arrayList.get(i);
+        }
+        return sortedList;
     }
 }

@@ -25,6 +25,15 @@ public class MakingChange
         int totalWays = 0;
 
 
+
+        // Two things that can be modified, the target amount and the coins[] array.
+
+        // Need to somehow figure out how to make this applicable to more than just two coins though.
+
+
+
+
+
         System.out.println(twoCoinComparison(sortedCoins[0], sortedCoins[1], target));
 
         for (int smallCoinIndex = 0; smallCoinIndex < sortedCoins.length - 1; smallCoinIndex++)
@@ -41,7 +50,6 @@ public class MakingChange
     }
 
     // for small coin, get max num we can fit, then subtract large coin from total, repeat
-
     private static int twoCoinComparison(int smallCoin, int largeCoin, int target)
     {
         int numCombosFound = 0;

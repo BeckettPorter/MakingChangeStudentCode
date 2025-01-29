@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * The class Making Change solves a classic problem:
@@ -11,35 +12,39 @@ public class MakingChange
 {
     public static long countWays(int target, int[] coins)
     {
-        int totalWays = 0;
 
+        ArrayList<Integer> ar = new ArrayList<>();
 
-        for (int testCoin : coins)
+        for (int coin : coins)
         {
-            int testTarget = target;
-
-            for (int comparisonCoin : coins)
-            {
-                if (testCoin != comparisonCoin)
-                {
-                    while (testTarget > 0)
-                    {
-                        if (canMakeTarget(testTarget, testCoin))
-                        {
-                            totalWays++;
-                        }
-                        testTarget -= comparisonCoin;
-                    }
-                }
-            }
-
+            ar.add(coin);
         }
 
-        return totalWays;
+
+
+
+        return search(target, ar);
     }
 
-    private static boolean canMakeTarget(int target, int coin)
+    private static int search(int target, ArrayList<Integer> coins)
     {
-        return (target % coin == 0);
+        if (target <= 0)
+        {
+            return 0;
+        }
+
+        if (coins.size() == 1)
+        {
+            return target % coins.getFirst();
+        }
+
+        // Include
+        int include = search(target - coins.getLast(), coins);
+
+        // Exclude
+        coins.remove(coins.getLast());
+        int exclude = search(target, coins);
+
+        return include + exclude;
     }
 }

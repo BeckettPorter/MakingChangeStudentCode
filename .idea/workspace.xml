@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Deleted all my code again :)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MakingChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MakingChange.java" afterDir="false" />
-    </list>
+    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Deleted all my code for a fourth time" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738089304551</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Deleted all my code for a fourth time">
+      <option name="closed" value="true" />
+      <created>1738182276015</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738182276015</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,6 +181,7 @@
     <MESSAGE value="Started redoing everything" />
     <MESSAGE value="Need to figure out way to make smaller comparison work with more than 2 coins..." />
     <MESSAGE value="Deleted all my code again :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted all my code again :)" />
+    <MESSAGE value="Deleted all my code for a fourth time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted all my code for a fourth time" />
   </component>
 </project>

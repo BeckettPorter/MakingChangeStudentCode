@@ -12,39 +12,53 @@ public class MakingChange
 {
     public static long countWays(int target, int[] coins)
     {
+        int[] sortedCoins = sortSmallToLarge(coins);
 
-        ArrayList<Integer> ar = new ArrayList<>();
-
-        for (int coin : coins)
-        {
-            ar.add(coin);
-        }
-
-
-
-
-        return search(target, ar);
+        return count(target, sortedCoins, 0);
     }
 
-    private static int search(int target, ArrayList<Integer> coins)
+    private static int count(int target, int[] coins, int index)
     {
-        if (target <= 0)
+        if (target == 0)
+        {
+            return 1;
+        }
+        if (target < 0)
         {
             return 0;
         }
 
-        if (coins.size() == 1)
+        // If we have no more coins in the array.
+        if (index == coins.length - 1)
         {
-            return target % coins.getFirst();
+            return 0;
         }
 
         // Include
-        int include = search(target - coins.getLast(), coins);
+        int include = count(target - coins[index], coins, index);
 
         // Exclude
-        coins.remove(coins.getLast());
-        int exclude = search(target, coins);
+        int exclude = count(target, coins, index + 1);
 
         return include + exclude;
+    }
+
+    private static int[] sortSmallToLarge(int[] ar)
+    {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        for (int num : ar)
+        {
+            arrayList.add(num);
+        }
+        arrayList.sort(null);
+
+        int[] sortedList = new int[ar.length];
+
+        for (int i = arrayList.size(); i < arrayList.size(); i++)
+        {
+            sortedList[i] = arrayList.get(i);
+        }
+        return sortedList;
     }
 }

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Deleted all my code for a fourth time" />
+    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Deleted all my code for a fourth time">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MakingChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MakingChange.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,33 +46,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.MakingChangeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MakingChangeTest.testCorrectLarge.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MakingChangeTest.testCorrectLargest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MakingChangeTest.testCorrectSmall.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MakingChangeTest.testEfficient.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MakingChangeTest.testEfficientLarge.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MakingChangeTest.testEfficientLargest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.MakingChangeTest.executor": "Run",
+    "JUnit.MakingChangeTest.testCorrectLarge.executor": "Debug",
+    "JUnit.MakingChangeTest.testCorrectLargest.executor": "Run",
+    "JUnit.MakingChangeTest.testCorrectSmall.executor": "Run",
+    "JUnit.MakingChangeTest.testEfficient.executor": "Run",
+    "JUnit.MakingChangeTest.testEfficientLarge.executor": "Run",
+    "JUnit.MakingChangeTest.testEfficientLargest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.MakingChangeTest">
+}]]></component>
+  <component name="RunManager" selected="JUnit.MakingChangeTest.testCorrectLarge">
     <configuration name="MakingChangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Making Change Student Code" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MakingChangeTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MakingChangeTest.testCorrectLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Making Change Student Code" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MakingChangeTest" />
+      <option name="METHOD_NAME" value="testCorrectLarge" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,16 +107,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MakingChangeTest.testEfficientLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Making Change Student Code" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MakingChangeTest" />
-      <option name="METHOD_NAME" value="testEfficientLarge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MakingChangeTest.testEfficientLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Making Change Student Code" />
       <option name="PACKAGE_NAME" value="" />
@@ -116,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MakingChangeTest" />
+        <item itemvalue="JUnit.MakingChangeTest.testCorrectLarge" />
         <item itemvalue="JUnit.MakingChangeTest.testCorrectSmall" />
+        <item itemvalue="JUnit.MakingChangeTest" />
         <item itemvalue="JUnit.MakingChangeTest.testEfficientLargest" />
         <item itemvalue="JUnit.MakingChangeTest.testCorrectLargest" />
-        <item itemvalue="JUnit.MakingChangeTest.testEfficientLarge" />
       </list>
     </recent_temporary>
   </component>

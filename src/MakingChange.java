@@ -10,9 +10,20 @@ import java.util.ArrayList;
 
 public class MakingChange
 {
+
+    private static int[][] memoization;
+
     public static long countWays(int target, int[] coins)
     {
         int[] sortedCoins = sortSmallToLarge(coins);
+
+        // X is up to target and y is the coins.
+        memoization = new int[target][coins.length];
+
+        for (int i = 0; i < coins.length; i++)
+        {
+            memoization[0][i] = 1;
+        }
 
         return count(target, sortedCoins, 0);
     }
@@ -29,16 +40,34 @@ public class MakingChange
         }
 
         // If we have no more coins in the array.
-        if (index == coins.length - 1)
+        if (index == coins.length)
         {
             return 0;
         }
 
+        int nInclude = 0;
+        if (target - coins[index] >= 0)
+        {
+            nInclude = memoization[target - coins[index]][index];
+        }
+
         // Include
+        if (nInclude != 0)
+        {
+            return nInclude;
+        }
         int include = count(target - coins[index], coins, index);
+
+        if (target - coins[index] >= 0)
+        {
+            memoization[target - coins[index]][index] = include;
+        }
+
 
         // Exclude
         int exclude = count(target, coins, index + 1);
+
+        memoization[target][index] = exclude;
 
         return include + exclude;
     }
@@ -51,11 +80,12 @@ public class MakingChange
         {
             arrayList.add(num);
         }
+
         arrayList.sort(null);
 
         int[] sortedList = new int[ar.length];
 
-        for (int i = arrayList.size(); i < arrayList.size(); i++)
+        for (int i = 0; i < ar.length; i++)
         {
             sortedList[i] = arrayList.get(i);
         }

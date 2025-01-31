@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Deleted all my code for a fourth time">
+    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="recursion type beat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MakingChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MakingChange.java" afterDir="false" />
     </list>
@@ -50,7 +50,7 @@
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.MakingChangeTest.executor": "Run",
-    "JUnit.MakingChangeTest.testCorrectLarge.executor": "Debug",
+    "JUnit.MakingChangeTest.testCorrectLarge.executor": "Run",
     "JUnit.MakingChangeTest.testCorrectLargest.executor": "Run",
     "JUnit.MakingChangeTest.testCorrectSmall.executor": "Run",
     "JUnit.MakingChangeTest.testEfficient.executor": "Run",
@@ -67,7 +67,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MakingChangeTest.testCorrectLarge">
+  <component name="RunManager" selected="JUnit.MakingChangeTest.testCorrectLargest">
     <configuration name="MakingChangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Making Change Student Code" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MakingChangeTest.testCorrectLarge" />
+        <item itemvalue="JUnit.MakingChangeTest.testCorrectLargest" />
         <item itemvalue="JUnit.MakingChangeTest.testCorrectSmall" />
+        <item itemvalue="JUnit.MakingChangeTest.testCorrectLarge" />
         <item itemvalue="JUnit.MakingChangeTest" />
         <item itemvalue="JUnit.MakingChangeTest.testEfficientLargest" />
-        <item itemvalue="JUnit.MakingChangeTest.testCorrectLargest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738182276015</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="recursion type beat">
+      <option name="closed" value="true" />
+      <created>1738347575490</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738347575490</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +193,7 @@
     <MESSAGE value="Need to figure out way to make smaller comparison work with more than 2 coins..." />
     <MESSAGE value="Deleted all my code again :)" />
     <MESSAGE value="Deleted all my code for a fourth time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted all my code for a fourth time" />
+    <MESSAGE value="recursion type beat" />
+    <option name="LAST_COMMIT_MESSAGE" value="recursion type beat" />
   </component>
 </project>

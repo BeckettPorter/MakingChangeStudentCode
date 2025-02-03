@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="memoization is pain">
+    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="memoization is still pain but it works now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MakingChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MakingChange.java" afterDir="false" />
     </list>
@@ -192,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738348411950</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="memoization is still pain but it works now">
+      <option name="closed" value="true" />
+      <created>1738621452595</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738621452595</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +211,7 @@
     <MESSAGE value="Deleted all my code for a fourth time" />
     <MESSAGE value="recursion type beat" />
     <MESSAGE value="memoization is pain" />
-    <option name="LAST_COMMIT_MESSAGE" value="memoization is pain" />
+    <MESSAGE value="memoization is still pain but it works now" />
+    <option name="LAST_COMMIT_MESSAGE" value="memoization is still pain but it works now" />
   </component>
 </project>

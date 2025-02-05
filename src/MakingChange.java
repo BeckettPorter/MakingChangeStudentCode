@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class MakingChange
 {
     // Memoization array of longs to prevent integer overflow.
-    private static long[][] memoization;
+    private static long[][] tabulationTable;
 
     public static long countWays(int target, int[] coins)
     {
@@ -19,10 +19,34 @@ public class MakingChange
         int[] sortedCoins = sortSmallToLarge(coins);
 
         // Initialize the memoization array.
-        memoization = new long[target + 1][coins.length];
+        tabulationTable = new long[target + 1][coins.length];
 
-        // Call the initial recursive call and return the result of that recursive stack.
+
+        for (int checkTarget = 0; checkTarget < tabulationTable.length; checkTarget++)
+        {
+            for (int coin : coins)
+            {
+
+                include(checkTarget - coin, coin);
+
+                exclude(checkTarget, coin);
+            }
+        }
+
+
         return count(target, sortedCoins, 0);
+
+
+    }
+
+    private static int include(int target, int coin)
+    {
+
+    }
+
+    private static int exclude(int target, int coin)
+    {
+
     }
 
 

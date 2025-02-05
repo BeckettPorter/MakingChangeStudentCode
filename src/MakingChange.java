@@ -25,6 +25,7 @@ public class MakingChange
         return count(target, sortedCoins, 0);
     }
 
+
     // Sort a given int array from smallest to largest.
     private static int[] sortSmallToLarge(int[] ar)
     {

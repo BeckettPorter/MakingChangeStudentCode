@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="memoization is still pain but it works now">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MakingChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MakingChange.java" afterDir="false" />
-    </list>
+    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Had a random extra line at the end" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738621452595</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Made code less bad and commented">
+      <option name="closed" value="true" />
+      <created>1738622053050</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738622053050</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Had a random extra line at the end">
+      <option name="closed" value="true" />
+      <created>1738622082515</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738622082515</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,6 +225,8 @@
     <MESSAGE value="recursion type beat" />
     <MESSAGE value="memoization is pain" />
     <MESSAGE value="memoization is still pain but it works now" />
-    <option name="LAST_COMMIT_MESSAGE" value="memoization is still pain but it works now" />
+    <MESSAGE value="Made code less bad and commented" />
+    <MESSAGE value="Had a random extra line at the end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Had a random extra line at the end" />
   </component>
 </project>
